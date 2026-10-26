@@ -37,7 +37,7 @@ jobs:
           node-version: 24.15.0
 
       - name: Install commitlint
-        # zizmor: ignore[adhoc-packages] lint-only tool for PR commit messages, runs with no secrets and a read-only token
+        # zizmor: ignore[adhoc-packages] pre-existing unpinned install (package.json says ^19.5.0), left to the maintainers
         run: npm install --no-save @commitlint/cli @commitlint/config-conventional
 
       - name: Lint PR commits
